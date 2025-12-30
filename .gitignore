@@ -1,0 +1,20 @@
+#pdf
+BK3.pdf
+
+#folders
+hyper/
+
+#database
+users.db
+
+#csv files
+*.csv
+
+#models
+*.h5
+
+#environment variables
+.env
+
+#environment
+env/

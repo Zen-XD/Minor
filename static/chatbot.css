@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+body{
+    background-size: cover;
+    background-repeat: none;
+    background: url('bg.jpg');
+}
+
+div.page
+{
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+    height: 575px;
+    width: 750px;
+    margin-left: 400px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 3px solid rgb(86, 102, 250);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 10px 10px rgb(221, 215, 255);
+    overflow-y: auto;
+    scroll-behavior: smooth; 
+    
+}
+
+div.hello h2 
+{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    color: #303BA5;
+    margin-top: 20px;
+    padding: auto;
+}
+
+div.hello h4
+{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color: #303BA5;
+    margin-top: 20px;
+    padding: auto; 
+}
+
+div.chatbubble
+{
+    margin-top: 150px;
+    margin-left: 30px;
+    height: 50px;
+    width: 200px;
+    background-color:whitesmoke;
+    opacity: 80%;
+    border-radius: 15px;
+    display: none;
+}
+
+div.chatbubble h5
+{
+    display: none;
+}
+
+.input {
+    display: flex;
+    height: 50px;
+    width: 705px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50px; 
+    left: 51%;
+    transform: translateX(-50%);
+}
+
+button.logout img
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    position: absolute;
+    left: 1075px;
+    top: 150px;
+} 
+
+button
+{
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+.submit
+{
+    position:sticky;
+    margin-left: 600px;
+}
+.submit img
+{
+    height: 40px;
+    width: 40px;
+}
+
+button img
+{
+    height: 40px;
+    width: 40px;
+}
+
+#chat-container {
+    max-height: 500px;
+    overflow-y: scroll;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: none;
+}
+
+.chat-message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #d1e7fd;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #f1f0f0;
+    align-self: flex-start;
+}
+
+.input-field{
+    position: fixed;
+}
+
+.audio-player {
+    background-color: #222324; 
+    border-radius: 10px; 
+    padding: 3px; 
+    width: 100%; 
+    max-width: 300px; 
+    margin-top: 10px; 
+}
+
+.NP{
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    color: #303BA5;
+}

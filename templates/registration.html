@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/registration.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="register">
+        <div class="create">
+            <h2>Create Your Account</h2>
+        </div>
+
+        <div class="info">
+            <form action="/register" method="post">
+                <input type="text" name="username" placeholder="Username">
+                    <div class="dob">
+                        <input type="email" name="email" placeholder="Email Or Number"><br>
+                        <input type="password" name="password" placeholder="Password"><br>
+                        <input type="password" placeholder="Confirm Password"><br>
+                        <button class="submit"><a href="/login"> Sign Up</a></button>
+                    </div>
+            </form>
+        </div>
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(".submit").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+
+            let username = document.querySelector("input[name='username']").value;
+            let email = document.querySelector("input[name='email']").value;
+            let password = document.querySelector("input[name='password']").value;
+            let confirmPassword = document.querySelector("input[placeholder='Confirm Password']").value;
+
+            if (!username || !email || !password || !confirmPassword) {
+                alert("All fields are required!");
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            fetch("/register", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ username, email, password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    window.location.href = "/login"; // Redirect on success
+                } else {
+                    alert("Registration failed: " + data.message);
+                }
+            })
+            .catch(error => console.error("Error:", error));
+        });
+    });
+</script>
+</body>
+</html>

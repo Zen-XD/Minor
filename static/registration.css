@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+body{
+    background-size: cover;
+    background-repeat: none;
+    background: url('bg.jpg');
+}
+
+div.register
+{
+    width: 550px;
+    height: 550px;
+    margin-top: 5% ;
+    margin-left: 35%;
+    justify-content: center;
+    border-radius: 10%;
+    border: 3px solid rgb(86, 102, 250);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 10px 10px rgb(221, 215, 255);
+}
+
+div.create
+{
+    margin-top: 50px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.create h2 
+{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    color: #303BA5;
+}
+
+div.info 
+{
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+
+}
+div.info input
+{
+    margin-top: 20px;
+    height:30px;
+    font-size: medium;
+    width: 425px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(151, 151, 151); 
+    justify-content: center;
+    align-items: center;
+}
+
+div.dob 
+{
+    justify-content: center;
+    align-items: center;
+}
+
+div.dob h3 
+{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 5px;
+    color: rgb(151, 151, 151);  
+}
+
+div.dob input
+{
+    margin-top: 10px;
+    height: 30px;
+    font-size: medium;
+    width: 430px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(151, 151, 151);
+}
+
+button.submit
+{
+    margin-top: 20px;
+    height: 40px;
+    width: 452px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: medium;
+    background-color: #303BA5;
+    color: white;
+}
+
+button.submit:hover
+{
+    background-color: #1a2057;
+    transition: .3s;
+    cursor: pointer;
+}
+
+a 
+{
+    text-decoration: none;
+    color: white;
+}
